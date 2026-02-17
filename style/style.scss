@@ -30,6 +30,12 @@ html {
   max-width: 100vw;
   overflow-x: hidden;
   background: #efe8e1;
+  min-height: 100vh;
+
+  &.contacts-body {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .container {
@@ -317,7 +323,7 @@ footer {
 .btm-menu {
   position: fixed;
   left: 50%;
-  bottom: 50px;
+  bottom: 150px;
   transform: translateX(-50%);
   border: 2px solid #efe8e1;
   border-radius: 100px;
@@ -331,12 +337,177 @@ footer {
   .item {
     border-radius: 100px;
     padding: 8px;
+    position: relative;
 
     width: 40px;
     height: 40px;
 
     &.active {
       background: #d9896f;
+    }
+
+    .cart-num {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      color: #000;
+      border-radius: 100px;
+      padding: 10px;
+      width: 20px;
+      height: 20px;
+      background: #d9896f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+    }
+  }
+}
+
+.menu-top {
+  position: relative;
+
+
+  .container {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 167px;
+      background: linear-gradient(87deg, rgba(239, 232, 225, 0) 0%, #efe8e1 100%);
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: 2;
+    }
+
+  }
+
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow-x: scroll;
+    width: 100%;
+    padding-right: 150px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #fff8f0;
+    border: 2px solid #d9896f;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+
+  .item {
+    border-radius: 50px;
+    padding: 12px 20px;
+    background: #fff8f0;
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000205;
+    white-space: nowrap;
+    border: 1px solid #fff8f0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    &.active {
+      background: #fff8f0;
+      border: 1px solid #d9896f;
+      color: #d9896f;
+    }
+  }
+}
+
+.menu-block {
+
+  .menu-section {
+    margin-top: 40px;
+  }
+}
+
+.contacts-main {
+  flex: 1;
+}
+
+.contacts {
+  margin-bottom: 150px;
+
+  .container {
+    position: relative;
+  }
+
+  iframe {
+    width: 100%;
+    height: 615px;
+    border-radius: 30px;
+  }
+
+  .info {
+    border-radius: 20px;
+    width: 420px;
+    background: #fff8f0;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .heading {
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #2d2d2d;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+        color: #2d2d2d;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
