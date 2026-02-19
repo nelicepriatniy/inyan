@@ -38,7 +38,7 @@
           </svg>
           8(999)999-99-99
         </a>
-        <div class="header-login">
+        <div class="header-login login-open">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M5 20C5 21.9698 5.38799 23.9204 6.14181 25.7403C6.89563 27.5601 8.00052 29.2137 9.3934 30.6066C10.7863 31.9995 12.4399 33.1044 14.2597 33.8582C16.0796 34.612 18.0302 35 20 35C21.9698 35 23.9204 34.612 25.7403 33.8582C27.5601 33.1044 29.2137 31.9995 30.6066 30.6066C31.9995 29.2137 33.1044 27.5601 33.8582 25.7403C34.612 23.9204 35 21.9698 35 20C35 18.0302 34.612 16.0796 33.8582 14.2597C33.1044 12.4399 31.9995 10.7863 30.6066 9.3934C29.2137 8.00052 27.5601 6.89563 25.7403 6.14181C23.9204 5.38799 21.9698 5 20 5C18.0302 5 16.0796 5.38799 14.2597 6.14181C12.4399 6.89563 10.7863 8.00052 9.3934 9.3934C8.00052 10.7863 6.89563 12.4399 6.14181 14.2597C5.38799 16.0796 5 18.0302 5 20Z"
@@ -80,7 +80,7 @@
               <p class="name">Сет №1</p>
               <p class="price">690 ₽</p>
             </div>
-            <div class="wrapper_item_add-to-cart">
+            <div class="wrapper_item_add-to-cart card-open">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
                 <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
@@ -251,7 +251,7 @@
           stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </a>
-    <a href="" class="item cart">
+    <a class="item cart cart-open">
       <div class="cart-num">
         1
       </div>
@@ -261,6 +261,814 @@
           stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </a>
+  </div>
+
+  <div class="cart-popup popup">
+    <div class="top">
+      <div class="cart-close arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="cart-wrapper">
+      <div class="item">
+        <img src="./media/imgs/set.png" alt="" class="item-img">
+        <div class="item-info">
+          <p class="item-heaing">Сет №1</p>
+          <div class="item-count">
+            <p class="count-heading">
+              Количество:
+            </p>
+            <div class="count-block">
+              <div class="decrement">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.6001 20H26.5033" stroke="#000205" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <input value="1" type="number" class="count-input">
+              <div class="increment">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 13.5999V26.5032" stroke="#000205" stroke-width="2" stroke-linecap="round" />
+                  <path d="M13.6001 20H26.5033" stroke="#000205" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="price">690 ₽</div>
+        </div>
+        <div class="item-delete">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+            <path d="M15.4531 15.5261L24.5771 24.6501" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            <path d="M15.4531 24.5771L24.5771 15.4531" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./media/imgs/set.png" alt="" class="item-img">
+        <div class="item-info">
+          <p class="item-heaing">Сет №1</p>
+          <div class="item-count">
+            <p class="count-heading">
+              Количество:
+            </p>
+            <div class="count-block">
+              <div class="decrement">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.6001 20H26.5033" stroke="#000205" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <input value="1" type="number" class="count-input">
+              <div class="increment">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 13.5999V26.5032" stroke="#000205" stroke-width="2" stroke-linecap="round" />
+                  <path d="M13.6001 20H26.5033" stroke="#000205" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="price">690 ₽</div>
+        </div>
+        <div class="item-delete">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+            <path d="M15.4531 15.5261L24.5771 24.6501" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            <path d="M15.4531 24.5771L24.5771 15.4531" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+    <div class="catr-dop">
+      <p class="heading">Дополнительно:</p>
+      <p class="description">При каждом заказе мы кладем соевый соус, васаби и имбирь бесплатно!
+        Если вам нужно больше, добавьте прямо сейчас:</p>
+      <div class="card-dop-wrapper">
+        <div class="item">
+          <div class="item-l">
+            <svg class="add-dop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="dop-name">Соевый соус</p>
+          </div>
+          <p class="dop-price">20 ₽ </p>
+        </div>
+        <div class="item">
+          <div class="item-l">
+            <svg class="add-dop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="dop-name">Соевый соус</p>
+          </div>
+          <p class="dop-price">20 ₽ </p>
+        </div>
+        <div class="item">
+          <div class="item-l">
+            <svg class="add-dop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="dop-name">Соевый соус</p>
+          </div>
+          <p class="dop-price">20 ₽ </p>
+        </div>
+      </div>
+    </div>
+    <div class="person-count">
+      <p class="heading">Количество персон</p>
+      <div class="person-count-wrapper">
+        <div class="decrepent">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+            <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <input value="1" type="number" class="person-count-input">
+        <div class="increment">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+            <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="input-item">
+      <p class="heading">
+        Введите промокод
+      </p>
+      <input type="text" class="input-item-input" name="promo">
+    </div>
+    <div class="input-item">
+      <p class="heading">
+        Комментарий
+      </p>
+      <input type="text" class="input-item-input" name="comment">
+    </div>
+    <div class="predlo">
+      <div class="predlo-top">
+        <p class="heading">Вам может понравиться</p>
+        <div class="arrows">
+          <div class="prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="swiper cart-pred-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="itogo">
+      <div class="itogo-top">
+        <p class="heading">Итоговая стоимость</p>
+        <p class="num">1490 ₽</p>
+      </div>
+      <button type="submit" class="submit deliviry-open cart-close">Оформить заказ</button>
+    </div>
+  </div>
+
+  <div class="deliviry-popup popup">
+    <div class="deliviry-top">
+      <div class="top">
+        <div class="deliviry-close cart-open orange-arrow arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+
+      </div>
+      <div class="type-select">
+        <div class="item active">
+          Доставка
+        </div>
+        <div class="item">
+          Самовывоз
+        </div>
+      </div>
+      <div class="deliviry-menu">
+        <div class="item adres">
+          <div class="item-l">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 11C9 11.7956 9.31607 12.5587 9.87868 13.1213C10.4413 13.6839 11.2044 14 12 14C12.7956 14 13.5587 13.6839 14.1213 13.1213C14.6839 12.5587 15 11.7956 15 11C15 10.2043 14.6839 9.44124 14.1213 8.87863C13.5587 8.31602 12.7956 7.99995 12 7.99995C11.2044 7.99995 10.4413 8.31602 9.87868 8.87863C9.31607 9.44124 9 10.2043 9 11Z"
+                stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17.657 16.657L13.414 20.9C13.039 21.2746 12.5306 21.485 12.0005 21.485C11.4704 21.485 10.962 21.2746 10.587 20.9L6.343 16.657C5.22422 15.5381 4.46234 14.1127 4.15369 12.5608C3.84504 11.009 4.00349 9.40047 4.60901 7.93868C5.21452 6.4769 6.2399 5.22749 7.55548 4.34846C8.87107 3.46943 10.4178 3.00024 12 3.00024C13.5822 3.00024 15.1289 3.46943 16.4445 4.34846C17.7601 5.22749 18.7855 6.4769 19.391 7.93868C19.9965 9.40047 20.155 11.009 19.8463 12.5608C19.5377 14.1127 18.7758 15.5381 17.657 16.657Z"
+                stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="heading">Адрес доставки</p>
+
+          </div>
+          <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6L15 12L9 18" stroke="#000205" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="item adres time-open">
+          <div class="item-l">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 10L12 12V7M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z"
+                stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="heading">Время доставки</p>
+
+          </div>
+          <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6L15 12L9 18" stroke="#000205" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="item adres payment-open">
+          <div class="item-l">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 10H21M7 15H7.01M11 15H13M3 8C3 7.20435 3.31607 6.44129 3.87868 5.87868C4.44129 5.31607 5.20435 5 6 5H18C18.7956 5 19.5587 5.31607 20.1213 5.87868C20.6839 6.44129 21 7.20435 21 8V16C21 16.7956 20.6839 17.5587 20.1213 18.1213C19.5587 18.6839 18.7956 19 18 19H6C5.20435 19 4.44129 18.6839 3.87868 18.1213C3.31607 17.5587 3 16.7956 3 16V8Z"
+                stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="heading">Способ оплаты</p>
+
+          </div>
+          <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6L15 12L9 18" stroke="#000205" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="deliviry-btm">
+      <div class="deliviry-btm-menu">
+        <div class="item">
+          <p class="heading">Стоимость блюд</p>
+          <p class="num">1490 ₽</p>
+        </div>
+        <div class="item">
+          <p class="heading">Доставка</p>
+          <p class="num">0 ₽</p>
+        </div>
+
+      </div>
+      <div class="itogo">
+        <div class="itogo-top">
+          <p class="heading">Итоговая стоимость</p>
+          <p class="num">1490 ₽</p>
+        </div>
+        <button type="submit" class="submit">Оформить заказ</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="payment-popup popup">
+    <div class="payment-offset payment-close">
+    </div>
+    <div class="payment-wrapper">
+      <div class="top">
+        <div class="payment-close orange-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+        </div>
+        <p class="heading">Способ оплаты</p>
+      </div>
+      <div class="payment-list">
+        <label class="item">
+          <input type="radio" name="payment" value="Картой Онлайн" checked>
+          <div class="input-visual"></div>
+          <p class="name">Картой онлайн</p>
+        </label>
+        <label class="item">
+          <input type="radio" name="payment" value="Картой при получении">
+          <div class="input-visual"></div>
+          <p class="name">Картой при получении</p>
+        </label>
+        <label class="item">
+          <input type="radio" name="payment" value="Наличными при получении">
+          <div class="input-visual"></div>
+          <p class="name">Наличными при получении</p>
+        </label>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="time-popup popup">
+    <div class="top">
+      <div class="time-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <p class="heading">Время получения</p>
+    </div>
+    <div class="time-top-list">
+      <div class="next orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="time-top-wrapper">
+        <div class="swiper time-popup-top-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide item active">Сегодня</div>
+            <div class="item swiper-slide">Завтра, 8 февраля</div>
+            <div class="item swiper-slide">9 февраля</div>
+            <div class="item swiper-slide">10 февраля</div>
+            <div class="item swiper-slide last"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="time-wrapper">
+      <label class="item">
+        <p class="name">Как можно скорее</p>
+        <input type="radio" name="time" checked>
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">12:30-13:00</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">13:00-13:30</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+
+      <label class="item">
+        <p class="name">12:30-13:00</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">13:00-13:30</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">12:30-13:00</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">13:00-13:30</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">12:30-13:00</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+      <label class="item">
+        <p class="name">13:00-13:30</p>
+        <input type="radio" name="time">
+        <div class="input-visual"></div>
+      </label>
+    </div>
+    <div class="oformit-zakaz">
+      <button class="send">Оформить заказ</button>
+    </div>
+  </div>
+
+  <div class="card-popup popup">
+    <div class="top">
+      <div class="card-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="card-item">
+      <img src="./media/imgs/set.png" alt="" class="img">
+      <div class="info">
+        <div class="info-top">
+          <p class="name">Сет №1</p>
+          <p class="weight">1000 г</p>
+        </div>
+        <p class="description">Филадельфия, Калифорния, Ролл с угрем</p>
+      </div>
+    </div>
+    <div class="catr-dop">
+      <p class="heading">Дополнительно:</p>
+      <p class="description">При каждом заказе мы кладем соевый соус, васаби и имбирь бесплатно!
+        Если вам нужно больше, добавьте прямо сейчас:</p>
+      <div class="card-dop-wrapper">
+        <div class="item">
+          <div class="item-l">
+            <svg class="add-dop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="dop-name">Соевый соус</p>
+          </div>
+          <p class="dop-price">20 ₽ </p>
+        </div>
+        <div class="item">
+          <div class="item-l">
+            <svg class="add-dop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="dop-name">Соевый соус</p>
+          </div>
+          <p class="dop-price">20 ₽ </p>
+        </div>
+        <div class="item">
+          <div class="item-l">
+            <svg class="add-dop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="dop-name">Соевый соус</p>
+          </div>
+          <p class="dop-price">20 ₽ </p>
+        </div>
+      </div>
+    </div>
+    <div class="predlo">
+      <div class="predlo-top">
+        <p class="heading">Вам может понравиться</p>
+        <div class="arrows">
+          <div class="prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="swiper cart-pred-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="swiper-slide cart-pred-slide">
+            <img src="./media/imgs/set.png" alt="" class="slide-img">
+            <div class="slide-info">
+              <p class="name">Сет №1</p>
+              <p class="price">690 ₽</p>
+            </div>
+            <svg class="add-to-cart" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+              <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+              <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="add-to-cart person-count">
+      <button class="add-to-cart-btn">
+        <p class="title">Добавить в корзину</p>
+        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2.5" cy="2.5" r="2.5" fill="#EFE8E1" />
+        </svg>
+        <span>690 ₽</span>
+      </button>
+      <div class="person-count-wrapper">
+        <div class="decrepent">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+            <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <input value="1" type="number" class="person-count-input">
+        <div class="increment">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="#FFF8F0" stroke="#D9896F" stroke-width="2" />
+            <path d="M20 13.6V26.5032" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+            <path d="M13.6001 20H26.5033" stroke="#D9896F" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="login-popup popup ">
+    <div class="top">
+      <div class="login-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./media/icons/logo.png" alt="">
+    </div>
+    <div action="" class="login form">
+      <label class="input-label">
+        <p class="name">Введите ваш номер телефона</p>
+        <input type="text">
+      </label>
+      <button class="submit sms-open" type="submit">Получить код</button>
+    </div>
+  </div>
+
+  <div class="sms-popup popup">
+    <div class="top">
+      <div class="sms-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./media/icons/logo.png" alt="">
+    </div>
+    <div action="" class="login form">
+      <label class="input-label">
+        <p class="name">Введите код из СМС</p>
+        <input type="text" placeholder="••••">
+      </label>
+      <button class="submit lk-open" type="submit">Войти</button>
+    </div>
+
+
+  </div>
+
+  <div class="lk-popup popup">
+    <div class="top">
+      <div class="lk-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="info">
+      <p class="name">София</p>
+      <div class="bonuses"><span>0</span> бонусов</div>
+    </div>
+    <div class="lk-menu active">
+      <div class="item self-open">
+        <div class="item-l">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 11C9 11.7956 9.31607 12.5587 9.87868 13.1213C10.4413 13.6839 11.2044 14 12 14C12.7956 14 13.5587 13.6839 14.1213 13.1213C14.6839 12.5587 15 11.7956 15 11C15 10.2043 14.6839 9.44124 14.1213 8.87863C13.5587 8.31602 12.7956 7.99995 12 7.99995C11.2044 7.99995 10.4413 8.31602 9.87868 8.87863C9.31607 9.44124 9 10.2043 9 11Z"
+              stroke="#354052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M17.657 16.657L13.414 20.9C13.039 21.2746 12.5306 21.485 12.0005 21.485C11.4704 21.485 10.962 21.2746 10.587 20.9L6.343 16.657C5.22422 15.5381 4.46234 14.1127 4.15369 12.5608C3.84504 11.009 4.00349 9.40047 4.60901 7.93868C5.21452 6.4769 6.2399 5.22749 7.55548 4.34846C8.87107 3.46943 10.4178 3.00024 12 3.00024C13.5822 3.00024 15.1289 3.46943 16.4445 4.34846C17.7601 5.22749 18.7855 6.4769 19.391 7.93868C19.9965 9.40047 20.155 11.009 19.8463 12.5608C19.5377 14.1127 18.7758 15.5381 17.657 16.657Z"
+              stroke="#354052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <p class="heading">Личные данные</p>
+        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 6L15 12L9 18" stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="item history-open">
+        <div class="item-l">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.00029 11V6C9.00029 5.20435 9.31636 4.44129 9.87897 3.87868C10.4416 3.31607 11.2046 3 12.0003 3C12.7959 3 13.559 3.31607 14.1216 3.87868C14.6842 4.44129 15.0003 5.20435 15.0003 6V11M6.33129 8H17.6703C17.9587 7.99997 18.2436 8.06229 18.5057 8.1827C18.7677 8.30311 19.0006 8.47876 19.1883 8.6976C19.3761 8.91645 19.5144 9.17331 19.5936 9.45059C19.6728 9.72786 19.6911 10.019 19.6473 10.304L18.3923 18.456C18.2833 19.1644 17.9243 19.8105 17.3803 20.2771C16.8362 20.7438 16.1431 21.0002 15.4263 21H8.57429C7.85769 21 7.16477 20.7434 6.62092 20.2768C6.07707 19.8102 5.71822 19.1643 5.60929 18.456L4.35429 10.304C4.31046 10.019 4.32878 9.72786 4.408 9.45059C4.48722 9.17331 4.62545 8.91645 4.81324 8.6976C5.00102 8.47876 5.23391 8.30311 5.49594 8.1827C5.75796 8.06229 6.04293 7.99997 6.33129 8Z"
+              stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <p class="heading">0 заказов</p>
+        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 6L15 12L9 18" stroke="#000205" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="logout">Выйти</div>
+  </div>
+
+  <div class="self-popup popup">
+    <div class="top">
+      <div class="self-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <p>личные данные</p>
+
+    </div>
+    <div class="info">
+      <div class="bonuses"><span>0</span> бонусов</div>
+    </div>
+    <div class="lk-self active">
+
+      <div class="item">
+
+        <div class="name">Имя</div>
+        <div class="value">София</div>
+      </div>
+      <div class="item">
+        <div class="name">Номер телефона</div>
+        <div class="value">+7(999)999-99-99</div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="history-popup popup">
+    <div class="top">
+      <div class="history-close orange-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#D9896F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <p class="heading">Мои заказы</p>
+    </div>
+    <div class="history-wrapper">
+      <div class="item">
+        <div class="item-l">
+          <p class="name">Заказ №1</p>
+          <p class="date">11.11.2025</p>
+        </div>
+        <div class="item-r">
+          <p class="item-r-item">Сет №1</p>
+          <p class="item-r-item">Сет №1</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-l">
+          <p class="name">Заказ №1</p>
+          <p class="date">11.11.2025</p>
+        </div>
+        <div class="item-r">
+          <p class="item-r-item">Сет №1</p>
+          <p class="item-r-item">Сет №1</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-l">
+          <p class="name">Заказ №1</p>
+          <p class="date">11.11.2025</p>
+        </div>
+        <div class="item-r">
+          <p class="item-r-item">Сет №1</p>
+          <p class="item-r-item">Сет №1</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="offset"></div>
   </div>
 
 
