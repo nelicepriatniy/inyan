@@ -7,6 +7,14 @@ const cartPred = new Swiper('.cart-popup .cart-pred-slider', {
     nextEl: '.cart-popup .predlo .next',
     prevEl: '.cart-popup .predlo .prev'
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
 });
 
 const cardPred = new Swiper('.card-popup .cart-pred-slider', {
@@ -18,6 +26,15 @@ const cardPred = new Swiper('.card-popup .cart-pred-slider', {
     nextEl: '.card-popup .predlo .next',
     prevEl: '.card-popup .predlo .prev'
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+
 });
 
 

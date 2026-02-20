@@ -323,7 +323,7 @@ footer {
 .btm-menu {
   position: fixed;
   left: 50%;
-  bottom: 150px;
+  bottom: 50px;
   transform: translateX(-50%);
   border: 2px solid #efe8e1;
   border-radius: 100px;
@@ -843,6 +843,35 @@ footer {
       }
     }
 
+    .predlo-btm {
+      display: none;
+
+      .arrows {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .next,
+        .prev {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          background: #fff8f0;
+          border: 2px solid #d9896f;
+          border-radius: 50%;
+        }
+
+        .next {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+    }
+
     .cart-pred-slide {
       border-radius: 20px;
       padding: 20px;
@@ -1284,6 +1313,8 @@ footer {
     margin-top: 20px;
     flex: 1;
 
+    overflow-y: scroll;
+
     .item {
       display: flex;
       align-items: center;
@@ -1525,6 +1556,10 @@ footer {
       text-transform: uppercase;
       color: #000205;
     }
+
+    .name {
+      display: none;
+    }
   }
 
   .info {
@@ -1705,6 +1740,654 @@ footer {
         line-height: 100%;
         color: #2d2d2d;
       }
+    }
+
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    max-width: calc(100vw - 40px);
+  }
+
+  header {
+    padding: 20px 0;
+
+    .container {
+      flex-wrap: wrap;
+    }
+
+    .header-logo {
+      width: 108px;
+      height: 28px;
+      order: 1;
+    }
+
+    .header-search-block {
+      order: 3;
+      width: 100%;
+      margin-top: 20px;
+
+      .header-search-top {
+        width: 100%;
+      }
+
+      .header-search-label {
+        input {
+          padding: 10px 30px 10px 50px;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
+          left: 30px;
+        }
+      }
+
+    }
+
+    .header-info {
+      order: 2;
+      gap: 5px;
+
+      .header-phone {
+        svg {
+          height: 24px;
+          width: 24px;
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      .header-login {
+        svg {
+          width: 24px;
+          height: 24px;
+
+        }
+
+        font-size: 12px;
+        line-height: 100%;
+      }
+
+    }
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+
+    .wrapper_item {
+      &.small {
+
+        img {
+          height: 88px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 88px;
+        object-fit: contain;
+      }
+    }
+
+    .wrapper_item_add-to-cart {
+      width: 28px;
+      height: 28px;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+
+  .top-sale {
+    .container {
+      overflow-x: scroll;
+      padding: 0 20px;
+      max-width: 100vw;
+
+      img {
+        max-width: 90px;
+      }
+
+    }
+  }
+
+  .user-select {
+    .wrapper {
+      display: flex;
+      overflow-x: scroll;
+
+      .wrapper_item {
+        width: 182px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .btm-menu {
+    padding: 10px 30px;
+    gap: 20px;
+  }
+
+  .popup {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .cart-popup,
+  .card-popup {
+    padding: 20px;
+
+    .top {
+      margin-bottom: 10px;
+    }
+
+    .cart-wrapper {
+      .item {
+        padding: 15px;
+        gap: 20px;
+
+        .item-img {
+
+          width: 92px;
+          height: 109px;
+        }
+
+        .item-heaing {
+
+          font-size: 16px;
+          line-height: 100%;
+        }
+
+        .count-heading {
+
+          font-size: 12px;
+          line-height: 100%;
+        }
+
+        .decrement,
+        .increment {
+          width: 28px;
+          height: 28px;
+          position: relative;
+
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .count-input {
+
+          font-size: 22px;
+          line-height: 100%;
+        }
+
+        .price {
+
+          font-size: 22px;
+          line-height: 100%;
+          margin-top: 33px;
+        }
+
+        .item-delete {
+          width: 28px;
+          height: 28px;
+
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+
+      }
+    }
+
+    .catr-dop {
+      .heading {
+        font-size: 18px;
+        line-height: 100%;
+      }
+
+      .description {
+
+        font-size: 12px;
+        line-height: 100%;
+        margin-top: 10px;
+      }
+
+      .card-dop-wrapper {
+
+        .dop-name,
+        .dop-price {
+
+          font-size: 12px;
+          line-height: 100%;
+        }
+
+        .item {
+          .item-l {
+            svg {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+      }
+    }
+
+    .person-count {
+      margin-top: 20px;
+
+      .heading {
+
+        font-size: 22px;
+        line-height: 100%;
+      }
+
+      .person-count-wrapper {
+        gap: 5;
+
+        svg {
+          width: 28px;
+          height: 28px;
+        }
+
+        input {
+
+          max-width: 10px;
+          font-size: 22px;
+          line-height: 100%;
+        }
+
+      }
+    }
+
+    .input-item {
+      margin-top: 20px;
+
+      .heading {
+
+        font-size: 12px;
+        line-height: 100%;
+      }
+
+      input {
+        padding: 5px 20px;
+      }
+    }
+
+    .predlo {
+
+      .predlo-top {
+        .arrows {
+          display: none;
+        }
+
+        .heading {
+
+          font-size: 20px;
+          line-height: 100%;
+        }
+      }
+
+      .predlo-btm {
+        display: flex;
+        margin-top: 10px;
+
+        .arrows {
+
+          .next,
+          .prev {
+            width: 28px;
+            height: 28px
+          }
+        }
+      }
+
+      .cart-pred-slide {
+        .add-to-cart {
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+    }
+
+    .itogo {
+      padding-top: 20px;
+
+      .itogo-top {
+        .heading {
+          font-size: 16px;
+          line-height: 100%;
+        }
+
+        .num {
+          font-size: 22px;
+          line-height: 100%;
+        }
+      }
+
+      .submit {
+
+        font-size: 18px;
+        line-height: 100%;
+        margin-top: 20px;
+        padding: 20px;
+      }
+    }
+
+
+
+  }
+
+  .deliviry-popup {
+    padding: 20px;
+
+    .orange-arrow {
+      width: 28px;
+      height: 28px;
+    }
+
+    .type-select {
+      margin-bottom: 20px;
+
+      .item {
+
+        font-size: 12px;
+        line-height: 100%;
+        padding: 15px;
+      }
+    }
+
+    .deliviry-menu {
+      .item {
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+
+        .item-l {
+          .heading {
+
+            font-size: 12px;
+          }
+        }
+      }
+
+    }
+
+    .deliviry-btm-menu {
+      .item {
+        .heading {
+
+          font-size: 16px;
+        }
+
+        .num {
+
+          font-size: 22px;
+        }
+      }
+    }
+
+    .itogo {
+      margin-top: 10px;
+      padding-top: 10px;
+
+      .submit {
+        margin-top: 20px;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+    }
+
+  }
+
+  .payment-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .payment-wrapper {
+      padding-top: 20px;
+      padding-top: 40px;
+
+      .top {
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .heading {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .payment-list {
+      gap: 5px;
+
+      .item {
+        padding: 5px 10px;
+
+        .name {
+
+          font-size: 12px;
+        }
+      }
+    }
+
+    .orange-arrow {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .time-popup {
+    .orange-arrow {
+      width: 28px;
+      height: 28px;
+    }
+
+    .top {
+      .heading {
+
+        font-size: 22px;
+        line-height: 100%;
+      }
+    }
+
+    .time-top-list {
+      &::after {
+        width: 70px;
+      }
+
+      .time-top-wrapper {
+        .item {
+
+          font-size: 16px;
+          padding: 12px 15px;
+        }
+      }
+    }
+
+    .time-wrapper {
+      .item {
+        padding: 5px 10px;
+
+        .name {
+          font-size: 12px;
+
+        }
+
+      }
+    }
+
+    .send {
+      margin-top: 20px;
+
+      font-size: 22px;
+      padding: 17px;
+    }
+  }
+
+  .menu-top .container {
+    &::after {
+      width: 70px;
+    }
+
+    .menu-top-slider {
+      .item {
+
+        font-size: 16px;
+        padding: 12px 15px;
+      }
+    }
+  }
+
+  .contacts {
+    margin-bottom: 30px;
+
+    .info {
+      width: calc(100% - 20px);
+      bottom: 10px;
+      top: auto;
+      left: 10px;
+      transform: translate(0, 0);
+      padding: 15px;
+
+      .heading {
+        font-size: 20px;
+      }
+
+      .info-item {
+        p {
+          font-size: 16px;
+        }
+
+      }
+    }
+  }
+
+  footer {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-l {
+      order: 1;
+
+      .info {
+        text-align: center;
+
+        font-size: 12px;
+      }
+
+    }
+
+    .footer-logo {
+      order: 2;
+      width: 135px;
+      margin-top: 20px;
+    }
+
+    .footer-r {
+      order: 3;
+      margin-top: 20px;
+
+      .top {
+        justify-content: center;
+      }
+    }
+  }
+
+  .card-popup {
+    .card-item {
+      .info-top {
+        .name {
+
+          font-size: 20px;
+        }
+
+        .weight {
+
+          font-size: 12px;
+        }
+      }
+
+      .description {
+        font-size: 12px;
+      }
+    }
+
+    .add-to-cart {
+      button {
+
+        font-size: 22px;
+
+        span {
+
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .login-popup,
+  .sms-popup {
+    padding: 20px;
+
+    .logo {
+      margin-bottom: 150px;
+    }
+  }
+
+  .lk-popup,
+  .self-popup,
+  .history-popup {
+    padding: 20px;
+
+    .top {
+      gap: 10px;
+
+      .name,
+      .heading,
+      p {
+        display: block;
+
+        font-size: 20px;
+      }
+    }
+
+    .info {
+      .name {
+        display: none;
+      }
+    }
+
+    .lk-menu {
+      .item {
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+
+        .item-l {
+          .heading {
+
+            font-size: 12px;
+          }
+        }
+      }
+
     }
 
   }
