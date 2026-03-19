@@ -10,9 +10,11 @@ const cartPred = new Swiper('.cart-popup .cart-pred-slider', {
   breakpoints: {
     320: {
       slidesPerView: 2,
+      spaceBetween: 5
     },
     1024: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      spaceBetween: 10
     }
   }
 });
@@ -29,9 +31,11 @@ const cardPred = new Swiper('.card-popup .cart-pred-slider', {
   breakpoints: {
     320: {
       slidesPerView: 2,
+      spaceBetween: 5
     },
     1024: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      spaceBetween: 10
     }
   }
 
@@ -160,3 +164,23 @@ selfOpen.forEach((el) => { el.onclick = () => { openPopup(selfPopup) } })
 selfClose.forEach((el) => { el.onclick = () => { closePopup(selfPopup, false) } })
 
 
+//hide small menu jn footer 
+
+const btmMenu = document.querySelector(".btm-menu")
+
+if (btmMenu) {
+  window.addEventListener('scroll', function(e) {
+    const windowScroll = window.scrollY;
+    let scrollHeight = Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight,
+      document.body.clientHeight, document.documentElement.clientHeight
+    );
+    const windowHeight = window.outerHeight
+    if (windowScroll > scrollHeight - (windowHeight + 100)) {
+      btmMenu.classList.add('hidden')
+    } else {
+      btmMenu.classList.remove('hidden')
+    }
+  })
+}

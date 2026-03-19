@@ -1,14 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Myriad Pro";
-  src: url(../media/fonts/MYRIADPRO-REGULAR.OTF);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url(../media/fonts/MYRIADPRO-SEMIBOLD.OTF);
-  font-weight: 600;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +8,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 body,
@@ -28,7 +19,9 @@ html {
   min-height: 100vh;
 }
 body.contacts-body,
-html.contacts-body {
+body .page-template-template-contacts,
+html.contacts-body,
+html .page-template-template-contacts {
   display: flex;
   flex-direction: column;
 }
@@ -81,14 +74,14 @@ header .header-search-block .header-search-label input {
   padding: 20px;
   padding-left: 64px;
   background: none;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   color: black;
 }
 header .header-search-block .header-search-label input::placeholder {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -103,7 +96,7 @@ header .header-info .header-phone {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -117,7 +110,7 @@ header .header-info .header-login {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -142,7 +135,7 @@ header .header-info .header-login svg {
 }
 
 .section-heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -189,7 +182,7 @@ header .header-info .header-login svg {
   margin-bottom: 20px;
 }
 .wrapper .wrapper_item_info .price {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -241,7 +234,7 @@ footer .footer-r .top a {
   display: block;
 }
 footer .footer-r .policy {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -282,6 +275,11 @@ footer .footer-l .info {
   display: flex;
   align-items: center;
   gap: 40px;
+  transition: all 0.4s ease;
+}
+.btm-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 .btm-menu .item {
   border-radius: 100px;
@@ -294,7 +292,7 @@ footer .footer-l .info {
   background: #d9896f;
 }
 .btm-menu .item .cart-num {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -356,7 +354,7 @@ footer .footer-l .info {
   border-radius: 50px;
   padding: 12px 20px;
   background: #fff8f0;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
@@ -408,7 +406,7 @@ footer .footer-l .info {
   transform: translate(-50%, -50%);
 }
 .contacts .info .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -429,7 +427,7 @@ footer .footer-l .info {
   gap: 10px;
 }
 .contacts .info .info-item p {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
@@ -547,7 +545,7 @@ footer .footer-l .info {
 }
 .cart-popup .cart-wrapper .item .item-heaing,
 .card-popup .cart-wrapper .item .item-heaing {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
@@ -562,7 +560,7 @@ footer .footer-l .info {
 }
 .cart-popup .cart-wrapper .item .count-heading,
 .card-popup .cart-wrapper .item .count-heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -576,7 +574,7 @@ footer .footer-l .info {
 }
 .cart-popup .cart-wrapper .item .count-input,
 .card-popup .cart-wrapper .item .count-input {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -587,7 +585,7 @@ footer .footer-l .info {
 }
 .cart-popup .cart-wrapper .item .price,
 .card-popup .cart-wrapper .item .price {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -607,7 +605,7 @@ footer .footer-l .info {
 }
 .cart-popup .catr-dop .heading,
 .card-popup .catr-dop .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
@@ -615,7 +613,7 @@ footer .footer-l .info {
 }
 .cart-popup .catr-dop .description,
 .card-popup .catr-dop .description {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -645,7 +643,7 @@ footer .footer-l .info {
 }
 .cart-popup .catr-dop .card-dop-wrapper .dop-name,
 .card-popup .catr-dop .card-dop-wrapper .dop-name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -653,7 +651,7 @@ footer .footer-l .info {
 }
 .cart-popup .catr-dop .card-dop-wrapper .dop-price,
 .card-popup .catr-dop .card-dop-wrapper .dop-price {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -665,7 +663,7 @@ footer .footer-l .info {
 }
 .cart-popup .person-count .heading,
 .card-popup .person-count .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -680,7 +678,7 @@ footer .footer-l .info {
 }
 .cart-popup .person-count .person-count-wrapper input,
 .card-popup .person-count .person-count-wrapper input {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -695,7 +693,7 @@ footer .footer-l .info {
 }
 .cart-popup .input-item .heading,
 .card-popup .input-item .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -709,7 +707,7 @@ footer .footer-l .info {
   padding: 10px 30px;
   background: none;
   width: 100%;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -729,7 +727,7 @@ footer .footer-l .info {
 }
 .cart-popup .predlo .predlo-top .heading,
 .card-popup .predlo .predlo-top .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -803,7 +801,7 @@ footer .footer-l .info {
 }
 .cart-popup .predlo .cart-pred-slide .name,
 .card-popup .predlo .cart-pred-slide .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
@@ -812,7 +810,7 @@ footer .footer-l .info {
 }
 .cart-popup .predlo .cart-pred-slide .price,
 .card-popup .predlo .cart-pred-slide .price {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -841,7 +839,7 @@ footer .footer-l .info {
 }
 .cart-popup .itogo .itogo-top .heading,
 .card-popup .itogo .itogo-top .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
@@ -849,7 +847,7 @@ footer .footer-l .info {
 }
 .cart-popup .itogo .itogo-top .num,
 .card-popup .itogo .itogo-top .num {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -862,7 +860,7 @@ footer .footer-l .info {
   border-radius: 50px;
   padding: 15px 10px;
   background: #d9896f;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -892,7 +890,7 @@ footer .footer-l .info {
   border-radius: 50px;
   padding: 15px 20px;
   flex: 1;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -923,7 +921,7 @@ footer .footer-l .info {
   gap: 10px;
 }
 .deliviry-popup .deliviry-menu .item .item-l .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -943,14 +941,14 @@ footer .footer-l .info {
   gap: 20px;
 }
 .deliviry-popup .deliviry-btm-menu .item .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   color: #000205;
 }
 .deliviry-popup .deliviry-btm-menu .item .num {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -968,14 +966,14 @@ footer .footer-l .info {
   gap: 20px;
 }
 .deliviry-popup .itogo .itogo-top .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   color: #000205;
 }
 .deliviry-popup .itogo .itogo-top .num {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -987,7 +985,7 @@ footer .footer-l .info {
   border-radius: 50px;
   padding: 15px 10px;
   background: #d9896f;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -1033,7 +1031,7 @@ footer .footer-l .info {
   margin-bottom: 20px;
 }
 .payment-popup .payment-wrapper .top .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -1084,7 +1082,7 @@ footer .footer-l .info {
   transition: all 0.4s ease;
 }
 .payment-popup .payment-list .item .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1105,7 +1103,7 @@ footer .footer-l .info {
   gap: 20px;
 }
 .time-popup .top .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 100%;
@@ -1136,7 +1134,7 @@ footer .footer-l .info {
 }
 .time-popup .time-top-list .time-top-wrapper .item {
   width: fit-content;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
@@ -1182,7 +1180,7 @@ footer .footer-l .info {
   background: #fff8f0;
 }
 .time-popup .time-wrapper .item .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1222,7 +1220,7 @@ footer .footer-l .info {
   transition: all 0.4s ease;
 }
 .time-popup .send {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -1241,7 +1239,7 @@ footer .footer-l .info {
   margin-bottom: 20px;
 }
 .card-popup .card-item .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -1252,15 +1250,104 @@ footer .footer-l .info {
   display: flex;
   justify-content: space-between;
 }
+.card-popup .card-item .card-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.card-popup .card-item .card-kallor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #efe8e1;
+  background: #d9896f;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+.card-popup .card-item .card-info-icon {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #efe8e1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #d9896f;
+  transition: all 0.4s ease;
+}
+.card-popup .card-item .card-info-icon:hover {
+  background: #787573;
+}
+.card-popup .card-item .card-info-icon:hover + .card-info-block {
+  opacity: 1;
+  visibility: visible;
+}
+.card-popup .card-item .card-info-wrapper {
+  position: relative;
+}
+.card-popup .card-item .card-info-block {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  position: absolute;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff8f0;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-popup .card-item .card-info-block.active {
+  opacity: 1;
+  visibility: visible;
+}
+.card-popup .card-item .card-info-block .heading {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #d9896f;
+  margin-bottom: 10px;
+}
+.card-popup .card-item .card-info-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-popup .card-item .card-info-block li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+.card-popup .card-item .card-info-block .name,
+.card-popup .card-item .card-info-block .num {
+  white-space: nowrap;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000205;
+  text-transform: none;
+}
 .card-popup .card-item .weight {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   color: #787573;
 }
 .card-popup .card-item .description {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1276,7 +1363,7 @@ footer .footer-l .info {
   border-radius: 50px;
   padding: 15px 25px;
   background: #d9896f;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -1309,7 +1396,7 @@ footer .footer-l .info {
 }
 .login-popup .form label .name,
 .sms-popup .form label .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1318,7 +1405,7 @@ footer .footer-l .info {
 }
 .login-popup .form label input,
 .sms-popup .form label input {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1331,7 +1418,7 @@ footer .footer-l .info {
 .login-popup .form button,
 .sms-popup .form button {
   margin-top: 40px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -1369,7 +1456,7 @@ footer .footer-l .info {
 }
 .lk-popup .top p,
 .self-popup .top p {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -1386,7 +1473,7 @@ footer .footer-l .info {
 }
 .lk-popup .info .name,
 .self-popup .info .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -1401,7 +1488,7 @@ footer .footer-l .info {
   background: #d9896f;
   padding: 20px;
   padding-top: 95px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -1442,7 +1529,7 @@ footer .footer-l .info {
 }
 .lk-popup .lk-menu .item .item-l .heading,
 .self-popup .lk-menu .item .item-l .heading {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1458,7 +1545,7 @@ footer .footer-l .info {
 }
 .lk-popup .lk-self .name,
 .self-popup .lk-self .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1466,7 +1553,7 @@ footer .footer-l .info {
 }
 .lk-popup .lk-self .value,
 .self-popup .lk-self .value {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1479,7 +1566,7 @@ footer .footer-l .info {
 }
 .lk-popup .logout,
 .self-popup .logout {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -1499,7 +1586,7 @@ footer .footer-l .info {
   gap: 35px;
 }
 .history-popup .top p {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 100%;
@@ -1521,7 +1608,7 @@ footer .footer-l .info {
   justify-content: space-between;
 }
 .history-popup .history-wrapper .item .name {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
@@ -1529,7 +1616,7 @@ footer .footer-l .info {
   margin-bottom: 10px;
 }
 .history-popup .history-wrapper .item .date {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -1541,7 +1628,7 @@ footer .footer-l .info {
   gap: 10px;
 }
 .history-popup .history-wrapper .item-r .item-r-item {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -1621,6 +1708,7 @@ footer .footer-l .info {
     overflow-x: scroll;
     padding: 0 20px;
     max-width: 100vw;
+    gap: 5px;
   }
   .top-sale .container img {
     max-width: 90px;
@@ -1628,6 +1716,7 @@ footer .footer-l .info {
   .user-select .wrapper {
     display: flex;
     overflow-x: scroll;
+    gap: 5px;
   }
   .user-select .wrapper .wrapper_item {
     width: 182px;
@@ -1727,6 +1816,23 @@ footer .footer-l .info {
   .card-popup .catr-dop .card-dop-wrapper .item .item-l svg {
     width: 28px;
     height: 28px;
+  }
+  .cart-popup .card-item .card-kallor,
+  .card-popup .card-item .card-kallor {
+    font-size: 12px;
+  }
+  .cart-popup .card-item .card-info-icon,
+  .card-popup .card-item .card-info-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .cart-popup .card-item .card-info-block,
+  .card-popup .card-item .card-info-block {
+    left: 55%;
+  }
+  .cart-popup .card-item .card-info-block li,
+  .card-popup .card-item .card-info-block li {
+    gap: 20px;
   }
   .cart-popup .person-count,
   .card-popup .person-count {

@@ -1,0 +1,9 @@
+/**
+ * Theme Name: InYan
+ * Template: inyan 
+ *
+ * Version: 1.0
+ */
+
+/* импортируем стили родительской темы */
+@import url("../twentyfifteen/style.css");
