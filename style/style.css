@@ -164,6 +164,9 @@ header .header-info .header-login svg {
   object-fit: contain;
   margin-bottom: 20px;
 }
+.wrapper .wrapper_item .card-info {
+  margin-bottom: 20px;
+}
 .wrapper .wrapper_item.small {
   background: #fff8f0;
   padding: 30px;
@@ -1374,6 +1377,101 @@ footer .footer-l .info {
 }
 .card-popup .add-to-cart button span {
   font-size: 28px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.card-kallor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #efe8e1;
+  background: #d9896f;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.card-info-icon {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #efe8e1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #d9896f;
+  transition: all 0.4s ease;
+}
+.card-info-icon:hover {
+  background: #787573;
+}
+.card-info-icon:hover + .card-info-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-info-wrapper {
+  position: relative;
+}
+
+.card-info-block {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  position: absolute;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff8f0;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+.card-info-block.active {
+  opacity: 1;
+  visibility: visible;
+}
+.card-info-block .heading {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #d9896f;
+  margin-bottom: 10px;
+}
+.card-info-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-info-block li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+.card-info-block .name,
+.card-info-block .num {
+  white-space: nowrap;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000205;
+  text-transform: none;
 }
 
 .login-popup,
