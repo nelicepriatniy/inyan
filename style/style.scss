@@ -2763,4 +2763,113 @@ footer {
     }
 
   }
+
+  .wok-builder {
+    .wok-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .wok-item {
+      margin-bottom: 20px;
+
+    }
+
+    .wok-wrapper-item {
+      position: relative;
+      border-radius: 10px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .wok-heading {
+
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .wok-add {
+      justify-content: center;
+      padding: 11px;
+
+      border-radius: 7px;
+
+      svg {
+        display: none;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+      }
+    }
+
+
+    .wok-itogo {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .wok-itogo-heading {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+    }
+
+    .wok-itogo-r {
+      flex-wrap: wrap;
+    }
+
+    .wok-itogo-num {
+      width: 100%;
+      margin-top: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 100%;
+      order: 1;
+    }
+
+    .person-count-wrapper {
+      order: 3;
+    }
+
+    .person-count-wrapper .decrepent,
+    .person-count-wrapper .increment {
+      width: 28px;
+      height: 28px;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .person-count-wrapper input {
+
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 100%;
+      max-width: 30px;
+    }
+
+    .add-to-cart {
+      order: 2;
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      color: #efe8e1;
+      padding: 11px 30px;
+      flex: 1;
+      margin-left: 0;
+      margin-right: 5px;
+    }
+
+
+  }
 }
