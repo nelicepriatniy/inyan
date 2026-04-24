@@ -1733,6 +1733,117 @@ footer .footer-l .info {
   color: #2d2d2d;
 }
 
+.wok-builder {
+  margin-top: 35px;
+}
+.wok-builder .section-heading {
+  margin-bottom: 40px;
+}
+.wok-builder .wok-item {
+  margin-bottom: 40px;
+}
+.wok-builder .wok-heading {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000205;
+  margin-bottom: 20px;
+}
+.wok-builder .wok-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.wok-builder .wok-wrapper-item {
+  border-radius: 20px;
+  padding: 0px 10px 10px;
+  background: #fff8f0;
+}
+.wok-builder .wok-wrapper-item.small {
+  padding: 0;
+}
+.wok-builder .wok-wrapper-item.small .wok-add {
+  padding: 10px 30px;
+}
+.wok-builder .wok-add {
+  border: 1px solid #efe8e1;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wok-builder .wok-add span {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000205;
+}
+.wok-builder .wok-itogo {
+  border: 1px solid #efe8e1;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wok-builder .wok-itogo-l {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wok-builder .wok-itogo-r {
+  display: flex;
+  align-items: center;
+}
+.wok-builder .wok-itogo-num {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: #000205;
+  margin-right: 40px;
+}
+.wok-builder .wok-itogo-heading {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000205;
+}
+.wok-builder .add-to-cart {
+  margin-left: 20px;
+  border-radius: 50px;
+  padding: 15px 90px;
+  background: #d9896f;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #efe8e1;
+}
+
+.person-count-wrapper {
+  display: flex;
+  align-items: center;
+}
+.person-count-wrapper input {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: #000205;
+  text-align: center;
+  background: none;
+  max-width: 30px;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 @media (max-width: 1240px) {
   .container {
     max-width: calc(100vw - 40px);
