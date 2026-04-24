@@ -1831,6 +1831,10 @@ footer .footer-l .info {
   display: flex;
   align-items: center;
 }
+.person-count-wrapper .decrepent,
+.person-count-wrapper .increment {
+  height: 40px;
+}
 .person-count-wrapper input {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
@@ -1839,7 +1843,7 @@ footer .footer-l .info {
   color: #000205;
   text-align: center;
   background: none;
-  max-width: 30px;
+  max-width: 40px;
   -moz-appearance: textfield;
   appearance: textfield;
 }
